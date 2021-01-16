@@ -1,0 +1,377 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Yusei Magic", sans-serif;
+}
+.App {
+  background: url(images/graphic-design-bg-img.jpg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/*  =================================== NAVBAR ================================ */
+
+nav.responsive-nav {
+  width: 100%;
+  min-height: 14vh;
+  position: sticky;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+nav.responsive-nav > ul {
+  display: flex;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  height: 100%;
+  align-items: center;
+  margin-right: 5%;
+  margin-left: auto;
+  z-index: 3;
+}
+
+nav > ul > li {
+  z-index: 3;
+  list-style-type: none;
+  padding: 20px;
+  float: right;
+}
+
+nav > ul > li > a {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 24px;
+  z-index: 3;
+}
+
+a:link {
+  text-decoration: none !important;
+}
+
+.logo {
+  color: rgb(226, 226, 226);
+  letter-spacing: 5px;
+  font-weight: bolder;
+  margin-left: 5%;
+  width: max-content;
+}
+
+.logo-nav {
+  color: white;
+  cursor: pointer;
+  float: right;
+  display: none;
+  z-index: 3;
+}
+figure {
+  cursor: pointer;
+  display: none;
+}
+.active {
+  cursor: pointer;
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+}
+/*  =================================== @MEDIA QUERY ================================ */
+
+@media screen and (max-width: 830px) {
+  body {
+    overflow-x: hidden;
+  }
+  .form-message {
+    width: 100% !important;
+    margin: 0 !important;
+    z-index: 0;
+  }
+  nav {
+    background-color: rgb(29, 29, 29);
+  }
+  nav.responsive-nav > ul {
+    height: auto;
+    width: 210px;
+    position: fixed;
+    right: 0;
+    flex-direction: column;
+    top: 15vh;
+    margin-right: 0%;
+    transition: 3000ms ease all;
+    background-color: rgba(58, 58, 58, 0.787);
+  }
+
+  .li-desactive {
+    height: 100%;
+    width: 320px;
+    left: -320;
+    position: fixed;
+    right: 0;
+    flex-direction: column;
+    top: 14vh;
+    margin-right: 0%;
+    display: none;
+  }
+
+  nav.responsive-nav > ul > li {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  nav.responsive-nav > ul > li > a {
+    padding-right: 25%;
+  }
+
+  .logo-nav {
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    display: block;
+  }
+
+  figure {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 2%;
+  }
+
+  .text-type {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    background-color: rgb(29, 29, 29);
+  }
+  nav.responsive-nav > ul > li {
+    width: 100%;
+  }
+  .container-projects {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  #rockets {
+    width: 90%;
+  }
+
+  #about-me {
+    width: 80%;
+  }
+}
+/*  =================================== MAIN PAGE ================================ */
+
+/*  ............. TYPING EFFECT .................... */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 18vh;
+}
+
+.text-type {
+  color: white;
+  font-size: 2.4rem;
+}
+
+/*  ............. BUTTON CONTACT ME .................... */
+
+.button-contact {
+  margin-top: 25vh;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
+  letter-spacing: 2px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+  background: #ffffff;
+  padding: 10px 20px;
+  border: solid #292929 3px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #c9c9c9;
+  text-decoration: none;
+}
+
+.sm {
+  cursor: pointer;
+  font-size: 20px !important;
+  padding: 5px 5px !important;
+  margin-left: 20vh;
+  margin-top: 5vh;
+}
+
+/*  =================================== EXPERIENCE PAGE ================================ */
+.container-projects {
+  display: flex;
+  height: auto;
+  background-color: rgba(16, 72, 109, 0.952);
+}
+
+.container-projects > div {
+  margin: 10% 5%;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-info {
+  width: 60vw;
+  color: rgb(230, 230, 230);
+  text-align: justify;
+}
+
+.title {
+  line-height: 2;
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.description {
+  font-size: 1.2rem;
+}
+
+hr {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.description-1 {
+  font-size: 1.2rem;
+  margin-top: 2%;
+}
+
+/*  =================================== MODAL ================================ */
+
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+} */
+
+.form-message {
+  display: flex;
+  justify-content: center;
+  background: white;
+  border-radius: 5px;
+  width: 40%;
+  margin: 5% 30%;
+  z-index: 0;
+  /* position: absolute; */
+  /* left: 20%; */
+  /* height: auto; */
+  /* padding: 20px; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%);
+   */
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  align-items: flex-start;
+}
+
+.label {
+  font-size: 3vh;
+  justify-content: flex-start;
+  margin-top: 3vh;
+}
+
+.input {
+  width: 100%;
+}
+
+/*  =================================== ANIMATION ROCKET ================================ */
+
+#white_clouds {
+  animation: clouds 2s ease-in-out infinite alternate;
+}
+
+@keyframes clouds {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(20deg);
+  }
+}
+
+#turbins_right {
+  animation: t-rigth 1s ease-out infinite alternate;
+}
+
+@keyframes t-rigth {
+  from {
+    transform: rotateY();
+  }
+  to {
+    transform: rotateY(5deg);
+  }
+}
+
+/*  =================================== ANIMATION ABOUT-ME ================================ */
+
+#plant {
+  animation: plants 6s steps(60, end) infinite alternate-reverse;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes plants {
+  from {
+    transform: rotateZ(-0deg);
+  }
+  to {
+    transform: rotateZ(8deg);
+  }
+}
+
+#notes {
+  animation: notes 3s steps(60, end) infinite alternate;
+  /* transform-origin: bottom; */
+  transform-box: fill-box;
+}
+
+@keyframes notes {
+  from {
+    transform: rotateX(20deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
